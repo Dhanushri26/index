@@ -1,0 +1,48 @@
+.head{
+  text-align: center;
+  
+  margin-top: 20px;
+  font-size: 25px;
+}
+.flex-container{
+  padding: 30px;
+  margin-right: 80px;
+   margin-top: 20px;
+   display: flex;
+  line-height: 20px;
+  background-color: lightgrey;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+}
+.flex-container > div {
+  font-size: 20px;
+  text-wrap: wrap;
+   background-color: skyblue;
+   margin : 10px;
+   padding: 20px;
+   width: 250px;
+   height: 30px;
+  
+}
+
+.flex-container > div:hover{
+ cursor: pointer;
+ color: skyblue;
+ background-color: black;
+ transition: ease 0.3s;
+ box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.3);
+ animation: slide 0.3s ease;
+}
+
+
+
+@keyframes slide{
+  0%{
+    transform :translateY(5px);
+  }
+  100%{
+
+  }
+}
